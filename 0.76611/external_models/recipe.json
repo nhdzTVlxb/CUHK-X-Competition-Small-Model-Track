@@ -1,0 +1,27 @@
+{
+  "architecture": {
+    "checkpoint_storage": "per-output-channel signed int5 and int6",
+    "classes": 40,
+    "ensemble": "equal sum of parent horizontal-flip-TTA logits",
+    "family": "CNN",
+    "inference_compute": "dequantized floating point",
+    "input": "16x4x128x128 Depth_Color-plus-IR",
+    "llm_inference": false,
+    "name": "two-fold R(2+1)D-34 logit ensemble",
+    "pretraining": "IG-65M then Kinetics-400"
+  },
+  "assets": {
+    "classifiers": "ensemble_packed.pt",
+    "detector": "yolo11n.pt",
+    "packed_loader": "ensemble_inference.py",
+    "preprocessing_reference": "reference.ipynb"
+  },
+  "preprocessing": {
+    "channels": "Depth_Color RGB plus IR grayscale",
+    "detector": "YOLO11n person class on eight uniform IR probes",
+    "frames": "16 rank-uniform frames",
+    "resize": "bilinear 128x128",
+    "window": "fixed per clip; union of boxes; square; margin 1.4; minimum side 0.35"
+  },
+  "schema_version": "cuhkx-yolo-r2p1d-packed-ensemble-recipe/v1"
+}

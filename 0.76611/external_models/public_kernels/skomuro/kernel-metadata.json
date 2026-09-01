@@ -1,0 +1,21 @@
+{
+  "id": "skomuro/cuhk-x-14th-place-0-8-thermal-baseline",
+  "id_no": 132430667,
+  "title": "CUHK X 14th Place 0.8 Thermal Baseline",
+  "code_file": "cuhk-x-14th-place-0-8-thermal-baseline.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": true,
+  "enable_tpu": false,
+  "enable_internet": false,
+  "keywords": [],
+  "dataset_sources": [],
+  "kernel_sources": [],
+  "competition_sources": [
+    "cuhk-x-competition-small-model-track"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python@sha256:37c64f7dd9c54116ecd1bcc88817c5469b88387388fade02bfa8bf3fc647d461",
+  "machine_shape": "Gpu"
+}

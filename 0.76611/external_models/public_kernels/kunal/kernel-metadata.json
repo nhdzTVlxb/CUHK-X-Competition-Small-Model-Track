@@ -1,0 +1,23 @@
+{
+  "id": "kunaldesale2408/yolo-for-cuhk-x",
+  "id_no": 131473522,
+  "title": "YOLO for CUHK-X",
+  "code_file": "yolo-for-cuhk-x.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": false,
+  "enable_gpu": false,
+  "enable_tpu": true,
+  "enable_internet": true,
+  "keywords": [],
+  "dataset_sources": [
+    "phuongncn/k-kuno-lb-0-711-r2plus1d-model"
+  ],
+  "kernel_sources": [],
+  "competition_sources": [
+    "cuhk-x-competition-small-model-track"
+  ],
+  "model_sources": [],
+  "docker_image": "gcr.io/kaggle-private-byod/python-tpuvm@sha256:a2111cb9be558ea4bc187754bb95d7b65e90d8259434f1eb0e0ab1193ff498c0",
+  "machine_shape": "TpuV5E8"
+}
